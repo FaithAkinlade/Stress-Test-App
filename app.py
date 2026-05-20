@@ -37,7 +37,7 @@ def generate_portfolio(num_records=100000):
 base_portfolio = generate_portfolio(100000)
 
 # --- STAGE 2: Sidebar Control Panel (Shock Inputs) ---
-st.sidebar.header("🛠️ Macro Shock Controls")
+st.sidebar.header("Macro Shock Controls")
 st.sidebar.markdown("Adjust the price multiplier for each commodity class below:")
 
 # Interactive sliders for custom shock scenarios
