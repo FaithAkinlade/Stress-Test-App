@@ -11,7 +11,7 @@ st.set_page_config(
     initial_sidebar_state="expanded"
 )
 
-st.title("📊 High-Performance Risk Engine")
+st.title("High-Performance Risk Engine")
 st.caption("Polars-accelerated portfolio stress testing over 100,000 contract positions")
 
 # --- STAGE 1: Data Initialization (Cached for speed) ---
@@ -102,7 +102,7 @@ st.markdown("---")
 col_left, col_right = st.columns([1, 1])
 
 with col_left:
-    st.subheader("🌋 Financial PnL Impact by Asset Class")
+    st.subheader("Financial PnL Impact by Asset Class")
     # Group and aggregate data with Polars before passing to charting libraries
     breakdown = (
         stressed_df.group_by("commodity")
@@ -120,7 +120,7 @@ with col_left:
     st.plotly_chart(fig_bar, use_container_width=True)
 
 with col_right:
-    st.subheader("🚨 Tail-Risk Vulnerability: Worst Hit Positions")
+    st.subheader("Tail-Risk Vulnerability: Worst Hit Positions")
     # Instantly sort millions of bytes down to the top outliers
     outliers = (
         stressed_df.sort("pnl_impact")
