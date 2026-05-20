@@ -11,7 +11,7 @@ st.set_page_config(
     initial_sidebar_state="expanded"
 )
 
-st.title("High-Performance Risk Engine")
+st.title("Market-Risk Engine")
 st.caption("Polars-accelerated portfolio stress testing over 100,000 contract positions")
 
 # --- STAGE 1: Data Initialization (Cached for speed) ---
