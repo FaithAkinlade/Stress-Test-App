@@ -4,7 +4,7 @@ Polars-accelerated commodities risk engine simulating systemic macroeconomic sho
 High-Performance Macro Stress-Testing Engine
 An interactive, low-latency risk engine prototype designed to simulate macroeconomic market shocks across a large-scale commodities portfolio.
 
-## **1. The Architecture & First Principles**
+## **1. The Architecture**
 Legacy financial data systems frequently suffer from performance bottlenecks when running heavy scenarios row-by-row over massive datasets. This prototype tackles that scale challenge by decoupling the analytics pipeline:
 
 Vectorized Processing Engine: Built on Polars, utilizing multi-threaded C++ operations and lazy query execution graphs to process vector mathematics instantly across the drive.
